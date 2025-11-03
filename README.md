@@ -6,7 +6,7 @@
 
 > A modern, fully responsive landing page for Abun.com - an AI-powered content writing platform. Built as part of my internship assignment using React.js, Bootstrap, and CSS3.
 
-## 📸 Live Preview
+## Live Preview
 
 ![Abun Landing Page Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Abun+Landing+Page)
 
