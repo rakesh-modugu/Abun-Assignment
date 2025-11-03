@@ -1,0 +1,95 @@
+.cta-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+}
+
+.cta-section::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  bottom: -100px;
+  right: -100px;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cta-description {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  padding: 16px 40px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+.cta-note {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 36px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

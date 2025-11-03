@@ -1,0 +1,83 @@
+.how-it-works-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.how-it-works-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.step-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.step-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.step-arrow {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #667eea;
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+}
